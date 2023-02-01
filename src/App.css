@@ -1,0 +1,300 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.Nav {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 3rem;
+  height: 3rem;
+
+}
+
+
+
+.logo {
+  margin-left: 1rem;
+  height: 1.5rem;
+}
+.ham-icon{
+  display: none;
+}
+.ham-container{
+  height: 4rem;
+}
+.ham-container span{
+  margin-left: 44%;
+  height: 10%;
+  font-size: larger;
+  font-family: fantasy;
+  
+ }
+
+.Nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: .7rem;
+  text-decoration: none;
+  box-sizing: border-box;
+
+}
+
+.register {
+  margin: auto;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.register button {
+  margin-top: 1%;
+  padding: .3rem;
+  width: 6rem;
+  background-color: rgb(26, 25, 30);
+  border-radius: 1rem;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.register input {
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding: .7%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: medium;
+}
+
+.logInComponent {
+  margin: auto;
+  text-align: center;
+  margin-top: 6%;
+
+
+}
+
+.logInComponent p {
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
+}
+
+#register-right {
+  position: absolute;
+  right: 1rem;
+
+}
+
+.logInComponent input {
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding: .7%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: medium;
+}
+
+.logInComponent button {
+  margin-top: 1%;
+  padding: .3rem;
+  width: 6rem;
+  background-color: rgb(59, 59, 60);
+  border-radius: 1rem;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.logInComponent button:hover {
+  background-color: black;
+}
+
+.logInButton {
+  font-size: large;
+}
+
+.logInButton span {
+  color: rgb(89, 89, 243);
+  cursor: pointer;
+
+}
+
+.Nav ul li {
+  padding-left: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(12, 31, 238);
+
+}
+.AddProduct-main{
+  margin: auto;
+  text-align: center;
+}
+
+.addProduct {
+margin: auto;
+text-align: center;
+display: inline-block;
+/* border-radius: 5%; */
+padding: 1rem;
+margin-top: 9%;
+}
+
+.addProduct:hover{
+  box-shadow: 5px 3px 5px rgb(192, 184, 184);
+  
+}
+
+.addProduct>input {
+  display: block;
+  height: 2.5rem;
+  width: 20rem;
+  padding-left: 1%;
+  font-size: medium;
+  color: rgb(61, 177, 231);
+  outline: 2px,doted blue;
+  border-radius: 1rem;
+  margin: .4rem;
+  font-weight: bold;
+}
+.addProduct>p{
+  background-color: rgb(247, 77, 193);
+  height: 2rem;
+  padding-top: .3rem;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 9px;
+  box-shadow: 30px,black;
+  /* border: 2px solid rgb(156, 237, 18); */
+}
+.addProduct>button{
+  width: 10rem;
+  border-radius: 3px;
+  height: 2rem;
+  background-color: rgb(21, 19, 19);
+  color: white;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.addProduct>button:hover{
+  background-color: rgb(133, 131, 131);
+  cursor: pointer;
+
+}
+.products{
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1vw;
+}
+  .search{
+    margin: 1%;
+    padding: .3rem;
+    border: 2px solid black;
+  }
+.products ul li{
+  border: 1px solid black;
+  display: inline-block;
+  padding: .2rem;
+  width: 13vw;
+}
+.products ul li button{
+  width: 7vw;
+  font-size: 90%;
+  
+}
+.products ul .actionButton span {
+  float: right;
+  font-size:95% ;
+}
+.no-result{
+  font-size: larger;
+  margin-top: 2%;
+  color: red;
+}
+@media (max-width: 800px) {
+  .App {
+    /* display: flex; */
+    flex-direction: row;
+  }
+  .Nav {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    height: 14.5rem;
+
+    /* display: none; */
+  }
+  hr {
+    display: none;
+  }
+  .ham-icon{
+    display:block;
+    margin-top: .5rem;
+    margin-left: 1rem;
+   height: 2rem;
+   width: 2rem;
+  }
+  .ham-container {
+    display: flex;
+  }
+  .ham-container span{
+   margin-top: 6%;
+   margin: auto;
+   text-align: center;
+   font-size: large;
+   font-family: fantasy;
+  }
+
+
+  .Nav ul {
+    display: contents;
+    width: 100%;
+    color: black;
+    position: absolute;
+    padding-left: 0%;
+    margin-top: 0;
+    padding-top: 0;
+    transition: 2s ease-in-out;
+  } 
+  
+  #register-right {
+    position: absolute;
+    right: 3px;
+    top: 0;
+  }
+  .ne {
+    padding-top: .7rem;
+  }
+  .Nav ul li {
+    border-bottom: 2px solid black;
+    list-style-type: lower-greek;
+  }
+  .Nav ul li.active {
+    background-color: rgb(18, 6, 18);
+    color: white;
+  }
+  .products{
+   
+    font-size: 1vw;
+  }
+}
+ @media (max-width: 1120px){
+   /* .products ul li{
+    width:2rem
+  }
+  .products ul li button{
+    width: 3vw;
+    height:50%
+    
+  }  */
+}
